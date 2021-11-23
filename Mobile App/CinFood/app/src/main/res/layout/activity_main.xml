@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon_logo" />
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/icon_awal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="mulish"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Selamat Datang Di CinFood" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="90dp"
+        android:fontFamily="mulish"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:text="Silahkan Pilih Login," />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="mulish"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:text="Jika Anda Sudah Memiliki Akun" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:id="@+id/btnLogin"
+        android:text="Login"
+        android:backgroundTint="#FEBD2F"
+        android:textSize="15sp"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="30dp"
+        android:fontFamily="mulish"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:text="Atau" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="mulish"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:text="Pilih Register, Jika Anda Belum Memiliki Akun" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:id="@+id/btnRegister"
+        android:backgroundTint="#FFF2A9"
+        android:text="Register"
+        android:textSize="15sp"
+        android:textColor="#858585"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
