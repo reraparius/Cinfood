@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Pencarian">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="-60dp"
+            android:src="@drawable/ic_profil" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_logo"/>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/search_back"
+            android:drawableStart="@drawable/ic_search"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Temukan Makananmu"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/makan3"
+        android:layout_width="160dp"
+        android:layout_height="95dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/border"
+        android:elevation="4dp" />
+
+    <ImageView
+        android:id="@+id/nasgorMawut"
+        android:layout_width="148dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="240dp"
+        android:src="@drawable/mawut" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="297dp"
+        android:gravity="top"
+        android:text="Nagor Mawut"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="17dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="312dp"
+        android:gravity="top"
+        android:text="Rp13.000"
+        android:textColor="#928E8E" />
+
+    <ImageButton
+        android:id="@+id/beli5"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="296dp"
+        android:background="@drawable/ic_keranjang" />
+
+    <ImageButton
+        android:id="@+id/makan4"
+        android:layout_width="160dp"
+        android:layout_height="95dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/border"
+        android:elevation="4dp" />
+
+    <ImageView
+        android:id="@+id/nasgorBiasa"
+        android:layout_width="148dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="240dp"
+        android:src="@drawable/mawut" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="297dp"
+        android:gravity="top"
+        android:text="Nagor Biasa"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="17dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="312dp"
+        android:gravity="top"
+        android:text="Rp10.000"
+        android:textColor="#928E8E" />
+
+
+    <ImageButton
+        android:id="@+id/beli6"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="344dp"
+        android:layout_marginTop="304dp"
+        android:background="@drawable/ic_keranjang" />
+
+    <ImageButton
+        android:id="@+id/makan5"
+        android:layout_width="160dp"
+        android:layout_height="95dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/border"
+        android:elevation="4dp" />
+
+    <ImageView
+        android:id="@+id/nasgorTelor"
+        android:layout_width="148dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="350dp"
+        android:src="@drawable/nasgor_telor" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="408dp"
+        android:gravity="top"
+        android:text="Nagor Telor"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="17dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="423dp"
+        android:layout_marginBottom="91dp"
+        android:gravity="top"
+        android:text="Rp12.000"
+        android:textColor="#928E8E" />
+
+    <ImageButton
+        android:id="@+id/beli7"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="414dp"
+        android:background="@drawable/ic_keranjang" />
+
+    <ImageButton
+        android:id="@+id/makan6"
+        android:layout_width="160dp"
+        android:layout_height="95dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/border"
+        android:elevation="4dp" />
+
+    <ImageView
+        android:id="@+id/nasgorSpecial"
+        android:layout_width="148dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="350dp"
+        android:src="@drawable/nasgor_telor" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="408dp"
+        android:gravity="top"
+        android:text="Nagor Special"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="17dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="423dp"
+        android:layout_marginBottom="91dp"
+        android:gravity="top"
+        android:text="Rp15.000"
+        android:textColor="#928E8E" />
+
+    <ImageButton
+        android:id="@+id/beli8"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="414dp"
+        android:background="@drawable/ic_keranjang" />
+
+    <ImageButton
+        android:id="@+id/makan7"
+        android:layout_width="160dp"
+        android:layout_height="95dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="460dp"
+        android:background="@drawable/border"
+        android:elevation="4dp" />
+
+    <ImageView
+        android:id="@+id/nasgorPete"
+        android:layout_width="148dp"
+        android:layout_height="59dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="460dp"
+        android:src="@drawable/nasgor_pete" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="516dp"
+        android:gravity="top"
+        android:text="Nagor Pete"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="17dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="531dp"
+        android:gravity="top"
+        android:text="Rp12.000"
+        android:textColor="#928E8E" />
+
+    <ImageButton
+        android:id="@+id/beli9"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="524dp"
+        android:background="@drawable/ic_keranjang" />
+
+    <ImageButton
+        android:id="@+id/makan8"
+        android:layout_width="160dp"
+        android:layout_height="95dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="460dp"
+        android:background="@drawable/border"
+        android:elevation="4dp" />
+
+    <ImageView
+        android:id="@+id/nasgorSeafood"
+        android:layout_width="148dp"
+        android:layout_height="59dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="460dp"
+        android:src="@drawable/nasgor_pete" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="516dp"
+        android:gravity="top"
+        android:text="Nagor Seafood"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="17dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="531dp"
+        android:gravity="top"
+        android:text="Rp15.000"
+        android:textColor="#928E8E" />
+
+    <ImageButton
+        android:id="@+id/beli10"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="524dp"
+        android:background="@drawable/ic_keranjang" />
+
+</RelativeLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF2A9"
+    tools:context=".Riwayat">
+
+    <View
+        android:layout_width="375dp"
+        android:layout_height="90dp"
+        android:background="@drawable/box"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="15dp"
+        android:backgroundTint="#FFD986"/>
+
+    <ImageView
+        android:id="@+id/mie"
+        android:layout_width="61dp"
+        android:layout_height="53dp"
+        android:src="@drawable/mie"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:text="3 Oktober 2021"
+        android:textSize="10sp"
+        android:textColor="#858585"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="100dp" />
+
+    <TextView
+        android:id="@+id/makanan"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:text="Mie Tek Tek"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="100dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_selesai"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="90dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:text="Pesanan sedang diantar"
+        android:textSize="10sp"
+        android:textColor="#4EE476"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="110dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:text="Rp. 10.000 x 2"
+        android:textColor="#000"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="250dp" />
+
+    <View
+        android:layout_width="375dp"
+        android:layout_height="90dp"
+        android:background="@drawable/box"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="15dp"
+        android:backgroundTint="#FFD986"/>
+
+    <ImageView
+        android:id="@+id/esCampur"
+        android:layout_width="61dp"
+        android:layout_height="53dp"
+        android:src="@drawable/esCampur"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:text="1 Oktober 2021"
+        android:textSize="10sp"
+        android:textColor="#858585"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="100dp" />
+
+    <TextView
+        android:id="@+id/makanan1"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:text="Es Campur Bahagia"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="215dp"
+        android:layout_marginLeft="100dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_peringatan"
+        android:layout_marginTop="235dp"
+        android:layout_marginLeft="90dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="235dp"
+        android:text="Pesanan sudah diterima"
+        android:textColor="#FF0000"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:text="Rp. 10.000 x 1"
+        android:textColor="#000"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="250dp" />
+    ---------
+    <View
+        android:layout_width="375dp"
+        android:layout_height="90dp"
+        android:background="@drawable/box"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="-70dp"
+        android:backgroundTint="#FEBD2F"/>
+
+    <ImageButton
+        android:id="@+id/hapus"
+        android:layout_width="30dp"
+        android:layout_height="34dp"
+        android:src="@drawable/ic_hapus"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="330dp"/>
+
+    <ImageView
+        android:id="@+id/SBetawi"
+        android:layout_width="61dp"
+        android:layout_height="53dp"
+        android:src="@drawable/SBetawi"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="-27dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:text="29 September 2021"
+        android:textSize="10sp"
+        android:textColor="#858585"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="40dp" />
+
+    <TextView
+        android:id="@+id/makanan2"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:text="Soto Betawi"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="325dp"
+        android:layout_marginLeft="40dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_peringatan"
+        android:layout_marginTop="345dp"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="345dp"
+        android:text="Pesanan sudah diterima"
+        android:textColor="#FF0000"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:text="Rp. 15.000 x 3"
+        android:textColor="#000"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="150dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/box"
+            android:backgroundTint="#FFD986"
+            android:gravity="center"
+            android:text="Riwayat Pemesanan"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_user"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="350dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>
