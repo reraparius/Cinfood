@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CinFood">
         <activity
+            android:name=".editprofile"
+            android:exported="true" />
+        <activity
+            android:name=".navbar"
+            android:exported="true" />
+        <activity
             android:name=".Pencarian"
             android:exported="true" />
         <activity

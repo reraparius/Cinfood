@@ -10,7 +10,7 @@
     <View
         android:layout_width="375dp"
         android:layout_height="90dp"
-        android:background="@drawable/box"
+        android:background="@drawable/border"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="75dp"
@@ -72,7 +72,7 @@
     <View
         android:layout_width="375dp"
         android:layout_height="90dp"
-        android:background="@drawable/box"
+        android:background="@drawable/border"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="180dp"
@@ -83,7 +83,7 @@
         android:id="@+id/esCampur"
         android:layout_width="61dp"
         android:layout_height="53dp"
-        android:src="@drawable/esCampur"
+
         android:layout_marginTop="200dp"
         android:layout_marginLeft="30dp" />
 
@@ -134,7 +134,7 @@
     <View
         android:layout_width="375dp"
         android:layout_height="90dp"
-        android:background="@drawable/box"
+        android:background="@drawable/border"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="290dp"
@@ -153,7 +153,7 @@
         android:id="@+id/SBetawi"
         android:layout_width="61dp"
         android:layout_height="53dp"
-        android:src="@drawable/SBetawi"
+        android:src="@drawable/soto_betawi"
         android:layout_marginTop="310dp"
         android:layout_marginLeft="-27dp" />
 
@@ -211,7 +211,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="130dp"
             android:layout_marginTop="25dp"
-            android:background="@drawable/box"
+            android:background="@drawable/border"
             android:backgroundTint="#FFD986"
             android:gravity="center"
             android:text="Riwayat Pemesanan"
@@ -221,7 +221,7 @@
             android:id="@+id/user"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/ic_user"
+
             android:layout_marginTop="10dp"
             android:layout_marginLeft="350dp"
             />
