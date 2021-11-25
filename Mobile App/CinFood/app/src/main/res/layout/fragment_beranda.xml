@@ -6,7 +6,7 @@
     android:layout_height="fill_parent"
     android:clipToOutline="true"
     android:orientation="vertical"
-    tools:context=".Beranda">
+    tools:context=".BerandaFragment">
 
     <TextView
         android:id="@+id/nama"

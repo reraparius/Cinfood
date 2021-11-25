@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class Beranda extends AppCompatActivity {
+public class BerandaFragment extends AppCompatActivity {
 
     private TextView makan, minum, FF;
     private EditText cari;
@@ -18,7 +18,7 @@ public class Beranda extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_beranda);
+        setContentView(R.layout.fragment_beranda);
 
         makan = findViewById(R.id.makan);
         minum = findViewById(R.id.minum);
@@ -31,7 +31,7 @@ public class Beranda extends AppCompatActivity {
         makan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Beranda.this, Pencarian.class);
+                Intent i = new Intent(BerandaFragment.this, Pencarian.class);
                 startActivity(i);
             }
         });
@@ -39,7 +39,7 @@ public class Beranda extends AppCompatActivity {
         menuMinum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Beranda.this, Pencarian.class);
+                Intent i = new Intent(BerandaFragment.this, Pencarian.class);
                 startActivity(i);
             }
         });
@@ -47,7 +47,7 @@ public class Beranda extends AppCompatActivity {
         menuMakan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Beranda.this, Pencarian.class);
+                Intent i = new Intent(BerandaFragment.this, Pencarian.class);
                 startActivity(i);
             }
         });
@@ -55,7 +55,7 @@ public class Beranda extends AppCompatActivity {
         menuFF.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Beranda.this, Pencarian.class);
+                Intent i = new Intent(BerandaFragment.this, Pencarian.class);
                 startActivity(i);
             }
         });
@@ -63,7 +63,7 @@ public class Beranda extends AppCompatActivity {
         minum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Beranda.this, Pencarian.class);
+                Intent i = new Intent(BerandaFragment.this, Pencarian.class);
                 startActivity(i);
             }
         });
@@ -71,7 +71,7 @@ public class Beranda extends AppCompatActivity {
         cari.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Beranda.this, Pencarian.class);
+                Intent i = new Intent(BerandaFragment.this, Pencarian.class);
                 startActivity(i);
             }
         });
@@ -79,7 +79,7 @@ public class Beranda extends AppCompatActivity {
         FF.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Beranda.this, Pencarian.class);
+                Intent i = new Intent(BerandaFragment.this, Pencarian.class);
                 startActivity(i);
             }
         });
