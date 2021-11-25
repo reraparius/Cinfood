@@ -1,9 +1,4 @@
 <?php
-/*
-Developed by cinfood
-Email: reraparius@gmail.com
-WhatsApp: 087851131734
-*/
 
 session_start();
 include("config.php");
@@ -74,24 +69,29 @@ include("uilang.php");
 					<div style="display: table-row; height: 100%;">
 						<div class="adminmenubar">
 							<div class="stickythingy">
-								<div style="padding: 40px;">
+								
+
+								<div style="padding: 10px; padding-top: 40px; padding-bottom: 50px;">
 									<?php
-									$currentlogo = "images/logoooo.jpeg";
+									$currentlogo = "images/logoooo1.jpeg";
 									if($logo != ""){
 										$currentlogo = "pictures/" . $logo;
 									}
 									?>
 									<a target="_blank" href="<?php echo $baseurl ?>"><img src="<?php echo $currentlogo ?>" style="display: border-box; width: 100%;"></a>
 								</div>
-								<a href="<?php echo $baseurl ?>admin.php"><div class="adminleftbaritem"><i class="fa fa-home" style="width: 30px;"></i> <?php echo uilang("Home") ?></div></a>
-								<a href="<?php echo $baseurl ?>admin.php?newpost"><div class="adminleftbaritem"><i class="fa fa-plus" style="width: 30px;"></i> <?php echo uilang("Add Product") ?></div></a>
-								<a href="<?php echo $baseurl ?>admin.php?pictures"><div class="adminleftbaritem"><i class="fa fa-image" style="width: 30px;"></i> <?php echo uilang("Pictures") ?></div></a>
-								<a href="<?php echo $baseurl ?>admin.php?categories"><div class="adminleftbaritem"><i class="fa fa-tag" style="width: 30px;"></i> <?php echo uilang("Categories") ?></div></a>
-								<a href="<?php echo $baseurl ?>admin.php?orders"><div class="adminleftbaritem"><i class="fa fa-file-text" style="width: 30px;"></i> <?php echo uilang("Orders") ?></div></a>
-								<a href="<?php echo $baseurl ?>admin.php?settings"><div class="adminleftbaritem"><i class="fa fa-cogs" style="width: 30px;"></i> <?php echo uilang("Settings") ?></div></a>
-								<a href="<?php echo $baseurl ?>admin.php?logout"><div class="adminleftbaritem"><i class="fa fa-sign-out" style="width: 30px;"></i> <?php echo uilang("Logout") ?></div></a>
-								
-								<div style="text-align: center; padding: 30px; font-size: 10px;"><?php echo uilang("Developed by") ?><br><a target="_blank" class="textlink" style="color: lime;" href="https://webappdev.my.id/">https://webappdev.my.id/</a><br><br>Donate to the author:<br><a href="https://www.paypal.me/habibieamrullah" class="textlink" style="color: lime;">https://www.paypal.me/habibieamrullah</a></div>
+								<a href="<?php echo $baseurl ?>admin.php"><div class="adminleftbaritem"><i class="fa fa-home" style="width: 20px;"></i> <?php echo uilang("Home") ?></div></a>
+								<a href="<?php echo $baseurl ?>admin.php?newpost"><div class="adminleftbaritem"><i class="fa fa-plus" style="width: 20px;"></i> <?php echo uilang("Add Product") ?></div></a>
+								<a href="<?php echo $baseurl ?>admin.php?pictures"><div class="adminleftbaritem"><i class="fa fa-image" style="width: 20px;"></i> <?php echo uilang("Pictures") ?></div></a>
+								<a href="<?php echo $baseurl ?>admin.php?categories"><div class="adminleftbaritem"><i class="fa fa-tag" style="width: 20px;"></i> <?php echo uilang("Categories") ?></div></a>
+								<a href="<?php echo $baseurl ?>admin.php?orders"><div class="adminleftbaritem"><i class="fa fa-file-text" style="width: 20px;"></i> <?php echo uilang("Orders") ?></div></a>
+								<a href="<?php echo $baseurl ?>admin.php?settings"><div class="adminleftbaritem"><i class="fa fa-cogs" style="width: 20px;"></i> <?php echo uilang("Settings") ?></div></a>
+								<a href="<?php echo $baseurl ?>admin.php?logout"><div class="adminleftbaritem"><i class="fa fa-sign-out" style="width: 20px;"></i> <?php echo uilang("Logout") ?></div></a>
+								<br>
+								<br>
+								<br>
+								<br>
+								<div style="text-align: center; padding: 30px; font-size: 10px;"><?php echo uilang("Developed by") ?><br><a target="_blank" class="textlink" style="color: lime;" href="#">Kelompok 3</a><br><br><br></a></div>
 							</div>
 						</div>
 						<div style="display: table-cell; padding: 25px; vertical-align: top; border-left: 1px solid <?php echo $maincolor ?>; ">
@@ -1032,7 +1032,7 @@ include("uilang.php");
 							$currentlogo = "pictures/" . $logo;
 						?>
 						<img src="<?php echo $currentlogo ?>" width="128"><br>
-						<p><?php echo $websitetitle ?> - Admin Panel</p>
+						<p><?php echo $websitetitle ?> - Khusus Admin</p>
 					</div>
 					<h1><?php echo uilang("Login") ?></h1>
 					<form method="post">
