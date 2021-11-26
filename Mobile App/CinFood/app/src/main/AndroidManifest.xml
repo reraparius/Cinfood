@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CinFood">
         <activity
+            android:name=".TambahAlamat"
+            android:exported="false" />
+        <activity
+            android:name=".EditAlamat"
+            android:exported="false" />
+        <activity
+            android:name=".Alamat"
+            android:exported="false" />
+        <activity
             android:name=".editprofile"
             android:exported="true" />
         <activity
@@ -19,14 +28,11 @@
             android:name=".Pencarian"
             android:exported="true" />
         <activity
-            android:name=".Beranda"
+            android:name=".BerandaFragment"
             android:exported="true" />
         <activity
             android:name=".Riwayat"
             android:exported="true" />
-        <activity
-            android:name=".Profile"
-            android:exported="false" />
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />

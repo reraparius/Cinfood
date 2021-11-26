@@ -1,17 +1,5 @@
 <?php
-/*
-Developed by cinfood
-Email: reraparius@gmail.com
-WhatsApp: 087851131734
-*/
 
-/*
-Step 1 : Create a database, and take a note of your database name
-Step 2 : Create a database user and assign that user to that database, take a note of user name and password
-Step 3 : Adjust database connection information on dbcon.php file according to your notes earlier
-Step 4 : Adjust Admin Panel user name and password as you wish
-Step 5 : Run the web, twice for first time, and login to your Admin Panel by accessing admin.php page
-*/
 
 //Admin panel credentials
 $username = "admin";
@@ -26,9 +14,9 @@ $connection->set_charset("utf8");
 
 //Database table names
 $tableconfig = $tableprefix . "config";
-$tableposts = $tableprefix . "posts";
-$tablecategories = $tableprefix . "categories";
-$tablemessages = $tableprefix . "messages";
+$tableposts = $tableprefix . "menu";
+$tablecategories = $tableprefix . "kategori";
+$tablemessages = $tableprefix . "transaksi";
 
 //Creating tables - config
 mysqli_query($connection, "CREATE TABLE IF NOT EXISTS $tableconfig (

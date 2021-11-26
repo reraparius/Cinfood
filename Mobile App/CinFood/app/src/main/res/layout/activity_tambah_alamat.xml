@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/kuning"
+    tools:context=".TambahAlamat">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/headerputih">
+
+        <ImageView
+            android:id="@+id/iconBackTambahAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tambah_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="35dp"
+            android:text="Alamat Baru"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/kontak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"
+        android:text="Kontak"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/NamaKontak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="20dp"
+        android:hint="Nama Lengkap"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/NoTelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/ic_telepon"
+        android:drawablePadding="20dp"
+        android:hint="Nomor Telepon"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/AlamatBaru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"
+        android:text="Alamat"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/Lokasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/ic_lokasi"
+        android:drawablePadding="20dp"
+        android:hint="Nama Jalan, Gang, Nomor Rumah"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnSimpanTambahAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="#FEBD2F"
+        android:text="Simpan"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+</LinearLayout>

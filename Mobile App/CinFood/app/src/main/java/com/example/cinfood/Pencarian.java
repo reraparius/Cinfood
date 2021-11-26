@@ -21,7 +21,7 @@ public class Pencarian extends AppCompatActivity {
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Pencarian.this, Beranda.class);
+                Intent i = new Intent(Pencarian.this, BerandaFragment.class);
                 startActivity(i);
             }
         });
