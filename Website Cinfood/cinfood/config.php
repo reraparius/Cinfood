@@ -16,6 +16,10 @@ $connection->set_charset("utf8");
 $tableconfig = $tableprefix . "config";
 $tableposts = $tableprefix . "menu";
 $tablecategories = $tableprefix . "kategori";
+<<<<<<< HEAD
+=======
+$tablemessages = $tableprefix . "transaksi";
+>>>>>>> fc8ad4d86d17f14c13254ca1d5d864181731f585
 
 //Creating tables - config
 mysqli_query($connection, "CREATE TABLE IF NOT EXISTS $tableconfig (
