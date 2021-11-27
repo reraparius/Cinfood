@@ -1,6 +1,7 @@
 package com.example.cinfood;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,11 +22,9 @@ public class Pencarian extends AppCompatActivity {
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Pencarian.this, BerandaFragment.class);
-                startActivity(i);
+                FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.pencarian, new BerandaFragment()).commit();
             }
         });
     }
 }
-
-
