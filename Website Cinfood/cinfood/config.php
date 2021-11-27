@@ -1,5 +1,6 @@
 <?php
 
+
 //Admin panel credentials
 $username = "admin";
 $password = "admin";
@@ -13,9 +14,9 @@ $connection->set_charset("utf8");
 
 //Database table names
 $tableconfig = $tableprefix . "config";
-$tableposts = $tableprefix . "posts";
-$tablecategories = $tableprefix . "categories";
-$tablemessages = $tableprefix . "messages";
+$tableposts = $tableprefix . "menu";
+$tablecategories = $tableprefix . "kategori";
+$tablemessages = $tableprefix . "transaksi";
 
 //Creating tables - config
 mysqli_query($connection, "CREATE TABLE IF NOT EXISTS $tableconfig (
