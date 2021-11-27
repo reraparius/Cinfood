@@ -20,7 +20,18 @@ include("uilang.php");
 		<link rel="shortcut icon" href="<?php echo $baseurl ?>favicon.ico" type="image/x-icon">
 		<link rel="icon" href="<?php echo $baseurl ?>favicon.ico" type="image/x-icon">
 		<script src="jquery.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		
 		<link rel="stylesheet" type="text/css" href="<?php echo $baseurl ?>assets/css/font-awesome.css">
 		
@@ -91,7 +102,7 @@ include("uilang.php");
 								<br>
 								<br>
 								<br>
-								<div style="text-align: center; padding: 30px; font-size: 10px;"><?php echo uilang("Developed by") ?><br><a target="_blank" class="textlink" style="color: lime;" href="#">Kelompok 3</a><br><br><br></a></div>
+								
 							</div>
 						</div>
 						<div style="display: table-cell; padding: 25px; vertical-align: top; border-left: 1px solid <?php echo $maincolor ?>; ">
@@ -772,7 +783,7 @@ include("uilang.php");
 								?>
 								<h1><?php echo uilang("Order") ?></h1>
 								<?php
-								$sql = "SELECT * FROM $tablemessages ORDER BY id DESC";
+								$sql = "SELECT * FROM transaksi_android ORDER BY tanggal DESC";
 								$result = mysqli_query($connection, $sql);
 								if($result){
 									if(mysqli_num_rows($result) == 0){
@@ -781,20 +792,29 @@ include("uilang.php");
 										?>
 										<table style="width: 100%">
 											<tr>
-												<th style="width: 100px;"><?php echo uilang("Date") ?></th>
-												<th style="width: 100px;"><?php echo uilang("Order") ?></th>
+												<th style="width: 20px;">No</th>
+												<th style="width: 100px;">Nama pembeli</th>
+												<th style="width: 100px;">Total harga</th>
+												<th style="width: 100px;">Tanggal</th>
+												<th style="width: 100px;">Detail</th>
 											</tr>
 											<?php
-											while($row = mysqli_fetch_assoc($result)){
-												$mil = $row["date"];
-												$seconds = $mil / 1000;
-												$postdate = date("d-m-Y", $seconds);
+											$no = 1;
+											while($row = mysqli_fetch_assoc($result)){	
+												$id_transaksi = $row['id_transaksi'];			
+												$sql = 'SELECT user.nm_depan, user.nm_belakang FROM user INNER JOIN transaksi_android ON user.id_user = transaksi_android.id_user WHERE transaksi_android.id_transaksi = '.$id_transaksi.'';						
+												$query = mysqli_query($connection, $sql) or die( mysqli_error($connection));
+                           						$getnama = mysqli_fetch_array($query);
 												?>
 												<tr>
-													<td><?php echo $postdate ?></td>
-													<td><?php echo nl2br($row["message"]) ?></td>
+													<td><?php echo $no;?></td>
+													<td><?php echo $getnama['nm_depan'];?> <?php echo $getnama['nm_belakang']; ?></td>
+													<td><?php echo nl2br($row["tot_harga"]) ?></td>
+													<td><?php echo nl2br($row["tanggal"]) ?></td>
+													<td><a href="#" class="view_data" id="<?php echo nl2br($row["id_transaksi"]) ?>" data-toggle="modal" data-target="#myModal"><button type="button">Detail order!</button></a></td>
 												</tr>
 												<?php
+												$no++;
 											}
 											?>
 										</table>
@@ -879,8 +899,45 @@ include("uilang.php");
 				</div>
 				
 				<div id="imagedisplayer" onclick="hideimagedisplayer()"></div>
+
+				<!-- Modal-->  
+				<div class="modal fade" id="myModal" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+							<h4 class="modal-title" id="myModalLabel">DETAIL ORDER</h4>
+								<button class="close" data-dismiss="modal"><span>&times;</span></button>
+							</div>
+							<div class="modal-body" id="data_dosen">
+							</div>
+							<div class="modal-footer">
+								<button class="btn btn-danger" data-dismiss="modal">Tutup</button>
+							</div>
+						</div>
+					</div>
+				</div>
 				
-				<script>
+				<script>			
+
+					$(document).ready(function(){
+							// yang bawah ini bekerja jika tombol lihat data (class="view_data") di klik
+							$('.view_data').click(function(){
+							// membuat variabel id, nilainya dari attribut id pada button
+							// id="'.$row['id'].'" -> data id dari database ya sob, jadi dinamis nanti id nya
+							var id_transaksi = $(this).attr("id");
+							
+							// memulai ajax
+								$.ajax({
+									url: 'view.php',	// set url -> ini file yang menyimpan query tampil detail data siswa
+									method: 'post',		// method -> metodenya pakai post. Tahu kan post? gak tahu? browsing aja :)
+									data: {id_transaksi:id_transaksi},		// nah ini datanya -> {id:id} = berarti menyimpan data post id yang nilainya dari = var id = $(this).attr("id");
+									success:function(data){		// kode dibawah ini jalan kalau sukses
+										$('#data_dosen').html(data);	// mengisi konten dari -> <div class="modal-body" id="data_siswa">
+										$('#myModal').modal("show");	// menampilkan dialog modal nya
+									}
+								});
+							});
+						});
 				
 					function showimagepicker(){
 						$("body").append("<div id='imagepickerui'><h2 onclick='closeimagepicker()' style='cursor: pointer;'><i class='fa fa-arrow-left'></i> Back</h2><div id='imagepickercontent'>Please wait...</div>")
@@ -1034,7 +1091,9 @@ include("uilang.php");
 						<img src="<?php echo $currentlogo ?>" width="128"><br>
 						<p><?php echo $websitetitle ?> - Khusus Admin</p>
 					</div>
+					<center>
 					<h1><?php echo uilang("Login") ?></h1>
+					</center>
 					<form method="post">
 						<input type="text" name="username" placeholder="Username">
 						<input type="password" name="password" placeholder="Password">
