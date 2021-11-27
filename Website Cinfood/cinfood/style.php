@@ -605,11 +605,11 @@
 	}
 	
 	.loginform{
-		padding: 100px; width: 400px; margin: 0 auto;
+		padding: 100px; width: 600px; margin: 0 auto;
 	}
 	
 	.adminmenubar{
-		display: table-cell; width: 140px; background-color: black; color: white;
+		display: table-cell; width: 140px; background-color: #F28433; color: white;
 	}
 	
 	.barsbutton{
