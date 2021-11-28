@@ -1,8 +1,10 @@
-package com.example.cinfood;
+package com.example.cinfood.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.cinfood.R;
 
 public class Alamat extends AppCompatActivity {
 

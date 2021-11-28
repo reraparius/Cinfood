@@ -20,7 +20,7 @@
             android:name=".EditAlamat"
             android:exported="false" />
         <activity
-            android:name=".Alamat"
+            android:name=".Activity.Alamat"
             android:exported="false" />
         <activity
             android:name=".editprofile"

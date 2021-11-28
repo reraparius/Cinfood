@@ -15,8 +15,10 @@ import retrofit2.http.POST;
 public interface APIRequestData {
     //untuk login
     @FormUrlEncoded
-    @POST("login2.php")
-    Call<loginResponse> perfomUserLogin(@Field("email_user") String user_name, @Field("password") String password);
+    @POST("Login.php")
+    Call<loginResponse> LoginResponse(
+            @Field("email_user") String user_name,
+            @Field("password") String password);
 
     @GET("User_Registration.php")
     Call<UserResponse> getUser();
