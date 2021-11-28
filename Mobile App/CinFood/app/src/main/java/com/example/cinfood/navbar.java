@@ -37,7 +37,8 @@ public class navbar extends AppCompatActivity {
                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
                         break;
                     case R.id.nav_home:
-                        setContentView(R.layout.fragment_beranda);
+
+                      //  setContentView(R.layout.fragment_beranda);
                         break;
 
 

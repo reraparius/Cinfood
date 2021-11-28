@@ -24,33 +24,33 @@ public class ProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
         // membuat objek view
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
-        Button edtprofil = view.findViewById(R.id.edit_profile);
-        Button almt = view.findViewById(R.id.alamat);
-        Button logout = view.findViewById(R.id.logout);
-
-        //membuat cation pada button edit profile
-        edtprofil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), editprofile.class);
-                startActivity(intent);
-            }
-        });
-        almt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), editprofile.class);
-                startActivity(intent);
-            }
-        });
-
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), editprofile.class);
-                startActivity(intent);
-            }
-        });
-        return view;
+//        Button edtprofil = view.findViewById(R.id.edit_profile);
+//        Button almt = view.findViewById(R.id.alamat);
+//        Button logout = view.findViewById(R.id.logout);
+//
+//        //membuat cation pada button edit profile
+//        edtprofil.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(getActivity(), editprofile.class);
+//                startActivity(intent);
+//            }
+//        });
+//        almt.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(getActivity(), editprofile.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        logout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(getActivity(), editprofile.class);
+//                startActivity(intent);
+//            }
+//        });
+       return view;
     }
 }
