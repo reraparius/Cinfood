@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFF2A9"
-    tools:context=".Riwayat">
+    tools:context=".MainActivity">
 
     <View
         android:layout_width="375dp"
@@ -83,7 +83,7 @@
         android:id="@+id/esCampur"
         android:layout_width="61dp"
         android:layout_height="53dp"
-
+        android:src="@drawable/es_campur"
         android:layout_marginTop="200dp"
         android:layout_marginLeft="30dp" />
 
@@ -221,7 +221,7 @@
             android:id="@+id/user"
             android:layout_width="50dp"
             android:layout_height="50dp"
-
+            android:src="@drawable/ic_profil"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="350dp"
             />

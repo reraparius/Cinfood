@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CinFood">
         <activity
+            android:name=".Pencarian"
+            android:exported="true" />
+        <activity
             android:name=".TambahAlamat"
             android:exported="false" />
         <activity
@@ -24,15 +27,6 @@
             android:exported="true" />
         <activity
             android:name=".navbar"
-            android:exported="true" />
-        <activity
-            android:name=".Pencarian"
-            android:exported="true" />
-        <activity
-            android:name=".BerandaFragment"
-            android:exported="true" />
-        <activity
-            android:name=".Riwayat"
             android:exported="true" />
         <activity
             android:name=".RegisterActivity"

@@ -16,7 +16,10 @@ $connection->set_charset("utf8");
 $tableconfig = $tableprefix . "config";
 $tableposts = $tableprefix . "menu";
 $tablecategories = $tableprefix . "kategori";
+<<<<<<< HEAD
+=======
 $tablemessages = $tableprefix . "transaksi";
+>>>>>>> fc8ad4d86d17f14c13254ca1d5d864181731f585
 
 //Creating tables - config
 mysqli_query($connection, "CREATE TABLE IF NOT EXISTS $tableconfig (
@@ -44,13 +47,6 @@ content TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
 mysqli_query($connection, "CREATE TABLE IF NOT EXISTS $tablecategories (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 category VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
-)");
-
-//Creating tables - messages
-mysqli_query($connection, "CREATE TABLE IF NOT EXISTS $tablemessages (
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-date VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-message VARCHAR(1300) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
 )");
 
 //Make empty variables
