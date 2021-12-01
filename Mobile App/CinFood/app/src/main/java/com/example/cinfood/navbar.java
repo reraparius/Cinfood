@@ -23,6 +23,7 @@ public class navbar extends AppCompatActivity {
         bottomNavigation = findViewById(R.id.bottom_navigation);
         //memberikan aksi ketika button di klick
 
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new BerandaFragment()).commit();
         bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
 
 
@@ -32,18 +33,18 @@ public class navbar extends AppCompatActivity {
               Fragment selectedFragment = null;
 
                 switch (item.getItemId()){
+                    case R.id.nav_home:
+                        selectedFragment = new BerandaFragment();
+                        break;
                     case R.id.nav_profil:
                         selectedFragment = new ProfileFragment();
-                       getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
+           //            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
                         break;
-                    case R.id.nav_home:
 
-                      //  setContentView(R.layout.fragment_beranda);
-                        break;
 
 
                 }
-                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
                 return true;
             }
         });

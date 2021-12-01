@@ -1,13 +1,10 @@
-package com.example.cinfood.Activity;
+package com.example.cinfood;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.cinfood.R;
-
-public class Alamat extends AppCompatActivity {
-
+public class AlamatActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
