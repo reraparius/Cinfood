@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CinFood">
         <activity
+            android:name=".Makanan"
+            android:exported="true" />
+        <activity
             android:name=".Pencarian"
             android:exported="true" />
         <activity

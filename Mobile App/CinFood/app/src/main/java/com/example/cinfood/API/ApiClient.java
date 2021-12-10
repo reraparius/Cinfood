@@ -4,7 +4,11 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
-    private static final String BASE_URL = "http://192.168.18.75/cinmobile/";
+//<<<<<<< Updated upstream
+    private static final String BASE_URL = "http://192.168.1.9/cinmobile/";
+//=======
+    private static final String BASE_URL = "http://192.168.1.9/cinmobile/";
+//>>>>>>> Stashed changes
 
 
     private static Retrofit retrofit;
