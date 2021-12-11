@@ -36,13 +36,16 @@ public class navbar extends AppCompatActivity {
                     case R.id.nav_home:
                         selectedFragment = new BerandaFragment();
                         break;
+                    case R.id.nav_keranjang:
+                        selectedFragment = new KeranjangFragment();
+                        break;
+                    case R.id.nav_riwayat:
+                        selectedFragment = new RiwayatFragment();
+                        break;
                     case R.id.nav_profil:
                         selectedFragment = new ProfileFragment();
-           //            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
+                        // getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
                         break;
-
-
-
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
                 return true;
