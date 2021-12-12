@@ -1,4 +1,4 @@
-package com.example.cinfood;
+package com.example.cinfood.Main;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.cinfood.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -44,7 +45,6 @@ public class navbar extends AppCompatActivity {
                         break;
                     case R.id.nav_profil:
                         selectedFragment = new ProfileFragment();
-                        // getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
                         break;
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();

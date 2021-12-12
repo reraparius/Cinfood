@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".editprofile">
+    tools:context=".Main.editprofile">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -52,8 +52,14 @@
 
     </RelativeLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/txt_id"/>
+
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_width="390dp"
         android:layout_marginTop="30dp"
@@ -62,26 +68,13 @@
         android:background="@color/white"
         >
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_nama_lengkap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_height="50dp"
-        android:layout_width="390dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="15dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="Jenis Kelamin"
-        android:background="@color/white"
-        >
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_width="390dp"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
@@ -90,12 +83,28 @@
         android:background="@color/white"
         >
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_tgl_lahir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
+        android:layout_width="390dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Tanggal Lahir"
+        android:background="@color/white"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="wrap_content"
         android:layout_width="390dp"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
@@ -104,12 +113,13 @@
         android:background="@color/white"
         >
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_no_telp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_width="390dp"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
@@ -118,12 +128,13 @@
         android:background="@color/white"
         >
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_Email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_width="390dp"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
@@ -132,6 +143,7 @@
         android:background="@color/white"
         >
         <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/txt_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>

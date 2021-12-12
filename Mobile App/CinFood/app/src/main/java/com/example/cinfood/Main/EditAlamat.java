@@ -1,11 +1,13 @@
-package com.example.cinfood;
+package com.example.cinfood.Main;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class EditAlamat extends AppCompatActivity {
+import com.example.cinfood.R;
 
+public class EditAlamat extends AppCompatActivity {
+// INI HAPUS AJA ELL SAMA LAYOUTNYA
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
