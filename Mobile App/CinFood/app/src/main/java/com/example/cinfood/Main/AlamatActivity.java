@@ -1,14 +1,16 @@
-package com.example.cinfood;
+package com.example.cinfood.Main;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class editprofile extends AppCompatActivity {
+import com.example.cinfood.R;
+
+public class AlamatActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_editprofile);
+        setContentView(R.layout.activity_alamat);
     }
 }

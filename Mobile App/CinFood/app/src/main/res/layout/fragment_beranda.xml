@@ -7,7 +7,7 @@
     android:clipToOutline="true"
     android:orientation="vertical"
     android:background="@drawable/headerkuning"
-    tools:context=".MainActivity" >
+    tools:context=".Main.MainActivity" >
 
 
     <TextView
