@@ -35,8 +35,15 @@ public class ProfileFragment extends Fragment {
             }
         });
 
-        //Logout ni bos(masih kurang)
-
+        //Logout ni bos(koreksi ya puj kalo ada yg salah, mffff)
+        TextView Logout = view.findViewById(R.id.Logout);
+        Logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),MainActivity.class);
+                startActivity(intent);
+            }
+        });
        return view;
     }
 }

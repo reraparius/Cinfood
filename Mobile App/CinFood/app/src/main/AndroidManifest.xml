@@ -18,12 +18,6 @@
             android:name=".Main.Pencarian"
             android:exported="true" />
         <activity
-            android:name=".Main.TambahAlamat"
-            android:exported="false" />
-        <activity
-            android:name=".Main.EditAlamat"
-            android:exported="false" />
-        <activity
             android:name=".Main.editprofile"
             android:exported="true" />
         <activity
