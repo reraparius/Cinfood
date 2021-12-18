@@ -18,14 +18,5 @@ public class Pencarian extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pencarian);
 
-        button_back = findViewById(R.id.button_back);
-
-        button_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.pencarian, new BerandaFragment()).commit();
-            }
-        });
     }
 }

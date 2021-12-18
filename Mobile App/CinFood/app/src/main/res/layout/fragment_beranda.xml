@@ -34,16 +34,6 @@
         android:text="Mau makan apa hari ini?"
         android:textColor="@color/black" />
 
-    <View
-        android:id="@+id/foto"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="307dp"
-        android:layout_marginTop="35dp"
-        android:background="@drawable/ic_profil" />
-
     <EditText
         android:id="@+id/cari"
         android:layout_width="match_parent"

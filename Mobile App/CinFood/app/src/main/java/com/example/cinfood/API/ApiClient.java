@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
 //sesuaikan dengan ip nya ya
-    private static final String BASE_URL = "http://192.168.1.9/cinmobile/";
+    private static final String BASE_URL = "http://10.128.108.162/cinmobile/";
 
     private static Retrofit retrofit;
 
