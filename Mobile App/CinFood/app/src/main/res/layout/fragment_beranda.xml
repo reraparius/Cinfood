@@ -45,13 +45,12 @@
         android:layout_marginLeft="22dp"
         android:layout_marginTop="120dp"
         android:layout_marginRight="20dp"
-        android:textSize="20dp"
-        android:textColor="@color/black"
+        android:background="@drawable/border"
         android:completionThreshold="1"
-        android:hint="Makan apa hari ini?"
         android:drawableStart="@drawable/ic_search"
         android:drawableLeft="@drawable/ic_search"
-        android:background="@drawable/border"/>
+        android:hint="Makan apa hari ini?"
+        android:textSize="20dp" />
 
     <GridLayout
         android:layout_width="match_parent"
