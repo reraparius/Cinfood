@@ -5,48 +5,20 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@color/kuning"
-    tools:context=".ProfileFragment">
+    android:background="@color/white"
+    tools:context=".Main.ProfileFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="211dp"
-        android:background="@drawable/headerputih">
+        android:layout_height="120dp"
+        android:background="@drawable/headerkuning">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/profil"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:foregroundGravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginLeft="140dp"
-            app:cardCornerRadius="200dp">
-            <ImageView
-                android:id="@+id/foto"
-                android:layout_width="130dp"
-                android:layout_height="130dp"/>
-
-        </androidx.cardview.widget.CardView>
-
-        <TextView
-            android:id="@+id/nama_user"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:gravity="center_horizontal"
-            android:text="XXXXXXXXXXXX"
-            android:textAlignment="center"
-            android:layout_below="@+id/profil"
-            android:layout_marginTop="15dp"/>
-        <TextView
-            android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:gravity="center_horizontal"
-            android:text="XXXXXXXXX"
-            android:textAlignment="center"
-            android:layout_below="@+id/nama_user"
-            android:layout_marginTop="3dp"/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/icon_logo" />
     </RelativeLayout>
 
     <TextView
@@ -61,7 +33,7 @@
         android:textSize="18sp"/>
 
     <TextView
-        android:id="@+id/EditProfile"
+        android:id="@+id/tv_editprofile"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_marginLeft="35dp"
@@ -71,20 +43,6 @@
         android:drawablePadding="20dp"
         android:drawableEnd="@drawable/ic_next"
         android:text="Edit Profile"
-        android:textAlignment="textStart"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/AlamatSaya"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="35dp"
-        android:drawableStart="@drawable/ic_lokasi"
-        android:drawablePadding="20dp"
-        android:drawableEnd="@drawable/ic_next"
-        android:text="Alamat Saya"
         android:textAlignment="textStart"
         android:textSize="18sp" />
 
