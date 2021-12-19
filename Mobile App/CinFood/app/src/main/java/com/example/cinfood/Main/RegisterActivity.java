@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.cinfood.API.ApiClient;
 import com.example.cinfood.API.ApiInterface;
 import com.example.cinfood.Model.RequestData;
 import com.example.cinfood.R;
@@ -27,7 +28,6 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
         getSupportActionBar().hide();
 
         edtnama = findViewById(R.id.edtnama);
