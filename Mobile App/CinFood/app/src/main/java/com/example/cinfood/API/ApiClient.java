@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
     // iki cuma kari ngubah ip, ojok di tambai head ... eror mau gess
- private static final String BASE_URL = "http://192.168.0.101/cinmobile/";
+ private static final String BASE_URL = "http://192.168.1.193/cinmobile/";
 //private static final String BASE_URL = "http://192.168.0.101/cinmobile/";
 //private static final String BASE_URL = "http://192.168.0.101/cinmobile/";
 
