@@ -22,7 +22,8 @@ public interface ApiInterface {
 
             @Field("namaLengkap") String Nama,
             @Field("email_user") String Email,
-            @Field("password") String Password
+            @Field("password") String Password,
+            @Field("alamat") String Alamat
     );
 
 }

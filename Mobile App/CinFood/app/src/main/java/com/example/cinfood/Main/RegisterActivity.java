@@ -1,5 +1,7 @@
 package com.example.cinfood.Main;
 
+import static com.example.cinfood.Main.editprofile.alamat;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -19,9 +21,9 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class RegisterActivity extends AppCompatActivity {
-    EditText edtnama, edtemail, edtpassword;
+    EditText edtnama, edtemail, edtpassword , edtalamat;
     Button btnRegister1;
-    String Nama, Email, Password;
+    String Nama, Email, Password, Alamat;
     ApiInterface apiInterface;
 
     @Override
@@ -33,6 +35,7 @@ public class RegisterActivity extends AppCompatActivity {
         edtnama = findViewById(R.id.edtnama);
         edtemail = findViewById(R.id.edtemail);
         edtpassword = findViewById(R.id.edtpassword);
+        edtalamat = findViewById(R.id.alamat);
         btnRegister1 = findViewById(R.id.btnRegister1);
 
         btnRegister1.setOnClickListener(new View.OnClickListener() {
@@ -43,16 +46,16 @@ public class RegisterActivity extends AppCompatActivity {
                         Nama = edtnama.getText().toString();
                         Email = edtemail.getText().toString();
                         Password = edtpassword.getText().toString();
-                        register(Nama, Email, Password);
+                        register(Nama, Email, Password, Alamat);
                         break;
                 }
             }
         });
     }
 
-    private void register(String namaLengkap, String email_user,String password ){
+    private void register(String namaLengkap, String email_user,String password, String alamt ){
        apiInterface = ApiClient.getClient().create(ApiInterface.class);
-        Call<RequestData> call = apiInterface.RegistResponse(namaLengkap, email_user,password);
+        Call<RequestData> call = apiInterface.RegistResponse(namaLengkap, email_user,password,alamt);
 
         call.enqueue(new Callback<RequestData>() {
             @Override
