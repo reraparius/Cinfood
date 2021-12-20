@@ -26,4 +26,17 @@ public interface ApiInterface {
             @Field("alamat") String Alamat
     );
 
+    @FormUrlEncoded
+    @POST("EdtProfile.php")
+    Call<RequestData> UpdateData(
+        @Field("id_user") int ID,
+        @Field("namaLengkap") String Nama,
+        @Field("tgl_lahir") String Tgl_Lahir,
+        @Field("no_hp") String NoHP,
+        @Field("alamat") String Alamat,
+        @Field("email_user") String Email,
+        @Field("password") String Password
+
+   );
+
 }

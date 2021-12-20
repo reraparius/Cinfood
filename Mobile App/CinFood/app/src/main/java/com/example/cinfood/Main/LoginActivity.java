@@ -29,8 +29,8 @@ public class LoginActivity extends AppCompatActivity {
     ApiInterface apiInterface;
 
      // credential data
-    String id_user, nama, tgl_lahir, no_hp, alamat, email_user, password_data;
-
+    String nama, tgl_lahir, no_hp, alamat, email_user, password_data;
+    int id_user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,8 +79,9 @@ public class LoginActivity extends AppCompatActivity {
                         password_data = userModel.getPassword();
                     }
                     //set data edit profil
-                     com.example.cinfood.Main.editprofile.id_user = id_user;
-                    com.example.cinfood.Main.editprofile.nama = nama;
+                      //com.example.cinfood.Main.editprofile.id_user = id_user;
+                    editprofile.id_user = id_user;
+                      com.example.cinfood.Main.editprofile.nama = nama;
                     com.example.cinfood.Main.editprofile.tgl_lahir = tgl_lahir;
                     com.example.cinfood.Main.editprofile.no_hp = no_hp;
                     com.example.cinfood.Main.editprofile.alamat = alamat;
