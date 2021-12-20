@@ -12,31 +12,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CinFood" >
         <activity
-            android:name=".Makanan"
+            android:name=".Main.Makanan"
             android:exported="true" />
         <activity
-            android:name=".Pencarian"
+            android:name=".Main.Pencarian"
+            android:exported="true" />
+<!--        <activity-->
+<!--            android:name=".TambahAlamat"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".EditAlamat"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".Main.editprofile"
             android:exported="true" />
         <activity
-            android:name=".TambahAlamat"
-            android:exported="false" />
-        <activity
-            android:name=".EditAlamat"
-            android:exported="false" />
-        <activity
-            android:name=".editprofile"
+            android:name=".Main.navbar"
             android:exported="true" />
         <activity
-            android:name=".navbar"
+            android:name=".Main.RegisterActivity"
             android:exported="true" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".Main.LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".Main.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

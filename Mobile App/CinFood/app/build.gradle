@@ -49,5 +49,5 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.+'
-    implementation 'com.github.mohammadatif:CircularImageView:1.0.0'
+//    implementation 'com.github.mohammadatif:CircularImageView:1.0.0'
 }

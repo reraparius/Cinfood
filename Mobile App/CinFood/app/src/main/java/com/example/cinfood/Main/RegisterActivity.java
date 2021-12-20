@@ -35,7 +35,7 @@ public class RegisterActivity extends AppCompatActivity {
         edtnama = findViewById(R.id.edtnama);
         edtemail = findViewById(R.id.edtemail);
         edtpassword = findViewById(R.id.edtpassword);
-        edtalamat = findViewById(R.id.alamat);
+        edtalamat = findViewById(R.id.edtalamat);
         btnRegister1 = findViewById(R.id.btnRegister1);
 
         btnRegister1.setOnClickListener(new View.OnClickListener() {
@@ -46,6 +46,7 @@ public class RegisterActivity extends AppCompatActivity {
                         Nama = edtnama.getText().toString();
                         Email = edtemail.getText().toString();
                         Password = edtpassword.getText().toString();
+                        Alamat = edtalamat.getText().toString();
                         register(Nama, Email, Password, Alamat);
                         break;
                 }

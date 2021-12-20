@@ -24,6 +24,7 @@ public class editprofile extends AppCompatActivity {
         setContentView(R.layout.activity_editprofile);
 
         System.out.println(nama);
+        System.out.println(id_user);
 
         txt_nama_lengkap = findViewById(R.id.txt_nama_lengkap);
         txt_tgl_lahir = findViewById(R.id.txt_tgl_lahir);
@@ -31,10 +32,10 @@ public class editprofile extends AppCompatActivity {
         txt_no_telp = findViewById(R.id.txt_no_telp);
         txt_Email = findViewById(R.id.txt_Email);
         txt_password = findViewById(R.id.txt_password);
-        txt_id = findViewById(R.id.txt_id);
+       // txt_id = findViewById(R.id.txt_id);
 
          // set data field
-        txt_id.setText(id_user);
+     //   txt_id.setText(id_user);
         txt_nama_lengkap.setText(nama);
         txt_tgl_lahir.setText(tgl_lahir);
         txt_alamat.setText(alamat);
