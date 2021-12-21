@@ -16,15 +16,15 @@
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="25dp"
             android:src="@drawable/icon_logo" />
     </RelativeLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_width="390dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="370dp"
+        android:layout_marginTop="30dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="Nama Lengkap"
         android:background="@color/white"
@@ -37,9 +37,9 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_height="wrap_content"
-        android:layout_width="390dp"
+        android:layout_width="370dp"
         android:layout_gravity="center"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="Tanggal Lahir"
         android:background="@color/white"
@@ -52,9 +52,9 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_height="wrap_content"
-        android:layout_width="390dp"
+        android:layout_width="370dp"
         android:layout_gravity="center"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="Alamat"
         android:background="@color/white"
@@ -67,9 +67,9 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_height="wrap_content"
-        android:layout_width="390dp"
+        android:layout_width="370dp"
         android:layout_gravity="center"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="Nomor Ponsel"
         android:background="@color/white"
@@ -82,9 +82,9 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_height="wrap_content"
-        android:layout_width="390dp"
+        android:layout_width="370dp"
         android:layout_gravity="center"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="Email"
         android:background="@color/white"
@@ -97,9 +97,9 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_height="wrap_content"
-        android:layout_width="390dp"
+        android:layout_width="370dp"
         android:layout_gravity="center"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="Kata Sandi"
         android:background="@color/white"
@@ -115,7 +115,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="60dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="35dp"
         android:layout_marginRight="60dp"
         android:backgroundTint="#FEBD2F"
         android:text="Simpan"

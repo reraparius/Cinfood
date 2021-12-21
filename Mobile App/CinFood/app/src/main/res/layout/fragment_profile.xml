@@ -17,7 +17,7 @@
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="25dp"
             android:src="@drawable/icon_logo" />
     </RelativeLayout>
 
@@ -28,10 +28,9 @@
         android:layout_marginTop="30dp"
         android:layout_marginLeft="15dp"
         android:text="Tentang Akun"
-        android:textColor="@color/black"
         android:textAlignment="textStart"
         android:textStyle="bold"
-        android:textSize="20sp"/>
+        android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/tv_editprofile"
@@ -40,13 +39,12 @@
         android:layout_marginLeft="35dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="35dp"
-        android:textColor="@color/black"
         android:drawableStart="@drawable/ic_setting"
         android:drawablePadding="20dp"
         android:drawableEnd="@drawable/ic_next"
         android:text="Edit Profile"
         android:textAlignment="textStart"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/Logout"
@@ -56,10 +54,9 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="35dp"
         android:drawableStart="@drawable/ic_logout"
-        android:textColor="@color/black"
         android:drawablePadding="20dp"
         android:text="Logout"
         android:textAlignment="textStart"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
 </LinearLayout>
