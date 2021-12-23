@@ -68,6 +68,18 @@
         android:drawablePadding="20dp"
         android:id="@+id/edtemail"
         android:hint="Masukkan Email"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_lokasi"
+        android:drawablePadding="20dp"
+        android:id="@+id/edtalamat"
+        android:hint="Masukkan Alamat"
         android:inputType="text"/>
 
     <EditText

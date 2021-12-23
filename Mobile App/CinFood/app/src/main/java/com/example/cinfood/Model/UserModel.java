@@ -1,13 +1,14 @@
 package com.example.cinfood.Model;
 
 public class UserModel {
-    String id_user, namaLengkap, tgl_lahir,no_hp, alamat,email_user,password;
+    String  namaLengkap, tgl_lahir,no_hp, alamat,email_user,password;
+    int id_user;
 
-    public String getId_user() {
+    public int getId_user() {
         return id_user;
     }
 
-    public void setId_user(String id_user) {
+    public void setId_user(int id_user) {
         this.id_user = id_user;
     }
 
