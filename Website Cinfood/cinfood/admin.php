@@ -10,7 +10,7 @@ include("uilang.php");
 <!DOCTYPE html>
 <html>
 	<head>
-	<title>Admin Panel | <?php echo $websitetitle ?></title>
+		<title>Admin Panel | <?php echo $websitetitle ?></title>
 		<meta charset="utf-8">
         <meta http-equiv="Pragma" content="no-cache" />
         <meta http-equiv="Expires" content="0" />
@@ -18,8 +18,10 @@ include("uilang.php");
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link rel="shortcut icon" href="<?php echo $baseurl ?>favicon.ico" type="image/x-icon">
 		<link rel="icon" href="<?php echo $baseurl ?>favicon.ico" type="image/x-icon">
-		<!-- <script src="jquery.min.js"></script> -->
+		<script src="jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		
 		<link rel="stylesheet" type="text/css" href="<?php echo $baseurl ?>assets/css/font-awesome.css">
 		
