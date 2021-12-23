@@ -609,7 +609,7 @@
 	}
 	
 	.adminmenubar{
-		display: table-cell; width: 140px; background-color: #F28433; color: white;
+		display: table-cell; width: 160px; background-color: #F28433; color: white;
 	}
 	
 	.barsbutton{
