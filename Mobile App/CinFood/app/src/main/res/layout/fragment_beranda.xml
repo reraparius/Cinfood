@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:clipToOutline="true"
     android:orientation="vertical"
-    android:background="@drawable/headerkuning"
+    android:background="@color/white"
     tools:context=".Main.MainActivity" >
 
 
@@ -36,20 +36,6 @@
         android:text="Mau makan apa hari ini?"
         android:textColor="@color/black" />
 
-    <ImageView
-        android:id="@+id/profil"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_alignBottom="@+id/nama"
-        android:layout_marginStart="171dp"
-        android:layout_marginBottom="-24dp"
-        android:layout_toEndOf="@+id/nama"
-        android:src="@drawable/ic_launcher_background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/nama"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
         android:id="@+id/cari"
         android:layout_width="match_parent"
@@ -66,34 +52,58 @@
         android:hint="Makan apa hari ini?"
         android:textSize="20dp" />
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/cari"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/light_orange_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_banner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_below="@+id/cari"
-        android:layout_marginTop="30dp"
-        android:rowCount="3"
+        android:layout_marginTop="190dp"
         android:columnCount="2"
-        android:columnOrderPreserved="false">
+        android:columnOrderPreserved="false"
+        android:rowCount="3">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/makan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="0"
-            android:layout_column="0"
-            android:layout_gravity="fill"
             android:layout_rowWeight="1"
+            android:layout_column="0"
             android:layout_columnWeight="1"
+            android:layout_gravity="fill"
             android:layout_margin="10dp"
             app:cardCornerRadius="8dp"
-            app:cardElevation="8dp" >
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_gravity="center_vertical|center_horizontal"
                 android:gravity="center"
-                android:layout_gravity="center_vertical|center_horizontal" >
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="150dp"
@@ -104,10 +114,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Makanan"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
                     android:textAlignment="center"
-                    android:textSize="20dp"/>
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -116,20 +126,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="0"
-            android:layout_column="1"
-            android:layout_gravity="fill"
             android:layout_rowWeight="1"
+            android:layout_column="1"
             android:layout_columnWeight="1"
+            android:layout_gravity="fill"
             android:layout_margin="10dp"
             app:cardCornerRadius="8dp"
-            app:cardElevation="8dp" >
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_gravity="center_vertical|center_horizontal"
                 android:gravity="center"
-                android:layout_gravity="center_vertical|center_horizontal" >
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="150dp"
@@ -140,10 +150,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Minuman"
-                    android:textStyle="bold"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
