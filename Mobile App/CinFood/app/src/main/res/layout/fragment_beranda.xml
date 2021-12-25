@@ -132,10 +132,10 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_below="@+id/cari"
-        android:layout_marginTop="238dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="238dp"
         android:layout_marginEnd="20dp"
-        android:columnCount="2"
+        android:columnCount="1"
         android:columnOrderPreserved="false"
         android:rowCount="3">
 
@@ -161,58 +161,20 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="150dp"
+                    android:layout_width="400dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/makan" />
+                    android:src="@drawable/makanminum"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Makanan"
+                    android:text="Aneka Makanan dan Minuman"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20dp"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/minum"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_rowWeight="1"
-            android:layout_column="1"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:layout_margin="10dp"
-            app:cardBackgroundColor="#e5f1fe"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="8dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical|center_horizontal"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/minum" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Minuman"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
     </GridLayout>
 
 </RelativeLayout>

@@ -11,8 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.cinfood.R;
-import com.squareup.picasso.OkHttp3Downloader;
-import com.squareup.picasso.Picasso;
+//import com.squareup.picasso.OkHttp3Downloader;
+//import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -46,14 +46,18 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
 
     @Override
     public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
-        Picasso.Builder builder = new Picasso.Builder(context);
-        builder.downloader(new OkHttp3Downloader(context));
-        builder.build().load(dataList.get(position).getId())
-                .placeholder(R.drawable.ic_launcher_background)
-                .error(R.drawable.ic_launcher_foreground)
-                .into(holder.fMakanan);
 
     }
+
+    //@Override
+    //public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
+    //    Picasso.Builder builder = new Picasso.Builder(context);
+    //    builder.downloader(new OkHttp3Downloader(context));
+    //    builder.build().load(dataList.get(position).getId())
+    //            .placeholder(R.drawable.ic_launcher_background)
+    //            .error(R.drawable.ic_launcher_foreground)
+    //            .into(holder.fMakanan);
+    //}
 
     @Override
     public int getItemCount() {
