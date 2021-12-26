@@ -7,7 +7,6 @@ include("uilang.php");
 
 ?>
 
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -20,18 +19,9 @@ include("uilang.php");
 		<link rel="shortcut icon" href="<?php echo $baseurl ?>favicon.ico" type="image/x-icon">
 		<link rel="icon" href="<?php echo $baseurl ?>favicon.ico" type="image/x-icon">
 		<script src="jquery.min.js"></script>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-		<!-- jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-		<!-- Popper JS -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		
 		<link rel="stylesheet" type="text/css" href="<?php echo $baseurl ?>assets/css/font-awesome.css">
 		
@@ -177,13 +167,11 @@ include("uilang.php");
 									
 									
 								</div>
-								<div class="progress" style="display: none">
-									<div id="upploadprogresstitle">
+								<div class="progress_bar" id="upploadprogresstitle" style="display: none;">										
 										<h1><?php echo uilang("Upload progress") ?> <span class="percent">0%</span></h1>
 										<div class="bar"></div>
 									</div>
-									<div id="status" style="margin-top: 30px;"></div>
-								</div>
+									
 								
 								<script>
 									$(function() {
@@ -198,16 +186,13 @@ include("uilang.php");
 												var percentVal = '0%';
 												bar.width(percentVal);
 												percent.html(percentVal);
-												$(".progress").slideDown();
+												$(".progress_bar").slideDown();
 												$(".postform").slideUp();
 											},
 											uploadProgress: function(event, position, total, percentComplete) {
 												var percentVal = percentComplete + '%';
 												bar.width(percentVal);
 												percent.html(percentVal);
-											},
-											complete: function(xhr) {
-												status.html(xhr.responseText);
 											}
 										});
 									}); 
@@ -740,13 +725,11 @@ include("uilang.php");
 											}, 1000)
 										</script>
 									</div>
-									<div class="progress" style="display: none">
-									<div id="upploadprogresstitle">
+									<div class="progress_bar" id="upploadprogresstitle" style="display: none;">										
 										<h1><?php echo uilang("Upload progress") ?> <span class="percent">0%</span></h1>
 										<div class="bar"></div>
 									</div>
-									<div id="status" style="margin-top: 30px;"></div>
-								</div>
+									
 								
 								<script>
 									$(function() {
@@ -761,16 +744,13 @@ include("uilang.php");
 												var percentVal = '0%';
 												bar.width(percentVal);
 												percent.html(percentVal);
-												$(".progress").slideDown();
+												$(".progress_bar").slideDown();
 												$(".postform").slideUp();
 											},
 											uploadProgress: function(event, position, total, percentComplete) {
 												var percentVal = percentComplete + '%';
 												bar.width(percentVal);
 												percent.html(percentVal);
-											},
-											complete: function(xhr) {
-												status.html(xhr.responseText);
 											}
 										});
 									}); 
@@ -802,13 +782,13 @@ include("uilang.php");
 											$no = 1;
 											while($row = mysqli_fetch_assoc($result)){	
 												$id_transaksi = $row['id_transaksi'];			
-												$sql = 'SELECT user.nm_depan, user.nm_belakang FROM user INNER JOIN transaksi_android ON user.id_user = transaksi_android.id_user WHERE transaksi_android.id_transaksi = '.$id_transaksi.'';						
+												$sql = 'SELECT namaLengkap FROM user INNER JOIN transaksi_android ON user.id_user = transaksi_android.id_user WHERE transaksi_android.id_transaksi = '.$id_transaksi.'';						
 												$query = mysqli_query($connection, $sql) or die( mysqli_error($connection));
                            						$getnama = mysqli_fetch_array($query);
 												?>
 												<tr>
 													<td><?php echo $no;?></td>
-													<td><?php echo $getnama['nm_depan'];?> <?php echo $getnama['nm_belakang']; ?></td>
+													<td><?php echo $getnama['namaLengkap']; ?></td>
 													<td><?php echo nl2br($row["tot_harga"]) ?></td>
 													<td><?php echo nl2br($row["tanggal"]) ?></td>
 													<td><a href="#" class="view_data" id="<?php echo nl2br($row["id_transaksi"]) ?>" data-toggle="modal" data-target="#myModal"><button type="button">Detail order!</button></a></td>

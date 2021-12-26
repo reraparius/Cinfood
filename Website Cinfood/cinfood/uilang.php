@@ -1,12 +1,5 @@
 <?php
-/*
-Developed by Habibie
-Email: habibieamrullah@gmail.com 
-WhatsApp: 6287880334339
-WebSite: https://webappdev.my.id
-Donate: https://www.paypal.com/paypalme/habibieamrullah
-*/
-    
+   
     //Bahasa Indonesia
     function translateId(){
 		global $language;
