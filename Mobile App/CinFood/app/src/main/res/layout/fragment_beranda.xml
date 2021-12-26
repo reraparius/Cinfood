@@ -153,27 +153,38 @@
             app:cardCornerRadius="15dp"
             app:cardElevation="8dp">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="400dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/makanminum"/>
+                    android:id="@+id/gambarmakan"
+                    android:layout_width="200dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/makan" />
+
+                <ImageView
+                    android:id="@+id/gambarminum"
+                    android:layout_width="200dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/gambarmakan"
+                    android:src="@drawable/minum" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/gambarmakan"
                     android:text="Aneka Makanan dan Minuman"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20dp"
                     android:textStyle="bold" />
-            </LinearLayout>
+            </RelativeLayout>
         </androidx.cardview.widget.CardView>
     </GridLayout>
 
