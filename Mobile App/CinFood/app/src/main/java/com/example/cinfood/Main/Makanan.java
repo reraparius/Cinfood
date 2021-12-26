@@ -25,6 +25,7 @@ public class Makanan extends AppCompatActivity {
     private RecyclerView recyclerView;
     ProgressDialog progressDialog;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
