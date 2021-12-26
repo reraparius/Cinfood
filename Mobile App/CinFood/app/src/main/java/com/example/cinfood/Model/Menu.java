@@ -54,7 +54,7 @@ public class Menu {
         this.content = content;
     }
 
-    public Integer getId() { return id; }
+    public Integer getId() { return  getId(); }
 
     public Integer getNormalprice() {
         return normalprice;
