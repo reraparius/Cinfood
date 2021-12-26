@@ -32,7 +32,7 @@ public class BerandaFragment extends Fragment {
         makan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), Pencarian.class);
+                Intent intent = new Intent(getActivity(), Makanan.class);
                 startActivity(intent);
             }
         });

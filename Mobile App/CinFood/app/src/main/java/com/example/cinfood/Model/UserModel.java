@@ -1,7 +1,7 @@
 package com.example.cinfood.Model;
 
 public class UserModel {
-    String  namaLengkap, tgl_lahir,no_hp, alamat,email_user,password;
+     String namaLengkap, tgl_lahir,no_hp, alamat,email_user,password, profil;
     int id_user;
 
     public int getId_user() {
@@ -59,4 +59,13 @@ public class UserModel {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public String getProfil() {
+        return profil;
+    }
+
+    public void setProfil(String profil) {
+        this.profil = profil;
+    }
+
 }

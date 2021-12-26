@@ -3,9 +3,17 @@ package com.example.cinfood.Model;
 import java.util.List;
 
 public class RequestData {
-     private boolean status;
+    private boolean status;
     private String message;
     private List<UserModel> data;
+
+    public List<UserModel> getData() {
+        return data;
+    }
+
+    public void setData(List<UserModel> data) {
+        this.data = data;
+    }
 
     public boolean isStatus() {
         return status;
@@ -23,11 +31,4 @@ public class RequestData {
         this.message = message;
     }
 
-    public List<UserModel> getData() {
-        return data;
-    }
-
-    public void setData(List<UserModel> data) {
-        this.data = data;
-    }
 }

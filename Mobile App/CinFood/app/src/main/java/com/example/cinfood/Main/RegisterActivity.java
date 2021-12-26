@@ -1,7 +1,5 @@
 package com.example.cinfood.Main;
 
-import static com.example.cinfood.Main.editprofile.alamat;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
