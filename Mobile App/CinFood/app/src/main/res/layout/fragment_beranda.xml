@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:clipToOutline="true"
     android:orientation="vertical"
-    android:background="@drawable/headerkuning"
+    android:background="@color/white"
     tools:context=".Main.MainActivity" >
 
 
@@ -17,11 +17,11 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="22dp"
-        android:layout_marginTop="50dp"
-        android:gravity="top"
-        android:text="Hai Ila"
-        android:textSize="25dp"
-        android:textColor="@color/black" />
+        android:layout_marginTop="30dp"
+        android:fontFamily="mulish"
+        android:text="Hai"
+        android:textColor="#FEBD2F"
+        android:textSize="25dp" />
 
     <TextView
         android:id="@+id/text"
@@ -30,25 +30,11 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="22dp"
-        android:layout_marginTop="75dp"
-        android:textSize="20dp"
-        android:gravity="top"
+        android:layout_marginTop="70dp"
+        android:fontFamily="mulish"
         android:text="Mau makan apa hari ini?"
-        android:textColor="@color/black" />
-
-    <ImageView
-        android:id="@+id/profil"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_alignBottom="@+id/nama"
-        android:layout_marginStart="171dp"
-        android:layout_marginBottom="-24dp"
-        android:layout_toEndOf="@+id/nama"
-        android:src="@drawable/ic_launcher_background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/nama"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textColor="@color/black"
+        android:textSize="20dp" />
 
     <EditText
         android:id="@+id/cari"
@@ -66,86 +52,129 @@
         android:hint="Makan apa hari ini?"
         android:textSize="20dp" />
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/cari"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/light_orange_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="281dp"
+            android:layout_height="219dp"
+            android:src="@drawable/image_banner"
+            tools:layout_editor_absoluteX="-27dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:text="CinFood"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="2dp"
+            android:text="Anda Lapar,"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="2dp"
+            android:text="Kami Siap Antar"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="2dp"
+            android:text="-------------------------------------"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_below="@+id/cari"
-        android:layout_marginTop="30dp"
-        android:rowCount="3"
-        android:columnCount="2"
-        android:columnOrderPreserved="false">
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="238dp"
+        android:layout_marginEnd="20dp"
+        android:columnCount="1"
+        android:columnOrderPreserved="false"
+        android:rowCount="3">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/makan"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_row="0"
+            android:layout_rowWeight="1"
             android:layout_column="0"
-            android:layout_gravity="fill"
-            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
+            android:layout_gravity="fill"
             android:layout_margin="10dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp" >
+            app:cardBackgroundColor="#f5e5fe"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_gravity="center_vertical|center_horizontal"
                 android:gravity="center"
-                android:layout_gravity="center_vertical|center_horizontal" >
+                android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="150dp"
+                    android:layout_width="400dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/makan" />
+                    android:src="@drawable/makanminum"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Makanan"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:textAlignment="center"
-                    android:textSize="20dp"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/minum"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="1"
-            android:layout_gravity="fill"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="10dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp" >
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_gravity="center_vertical|center_horizontal" >
-
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/minum" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Minuman"
-                    android:textStyle="bold"
+                    android:text="Aneka Makanan dan Minuman"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
     </GridLayout>
+
 </RelativeLayout>

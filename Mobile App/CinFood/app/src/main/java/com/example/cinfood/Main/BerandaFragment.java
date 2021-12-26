@@ -26,7 +26,7 @@ public class BerandaFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_beranda, container, false);
         CardView makan = view.findViewById(R.id.makan);
-        CardView minum = view.findViewById(R.id.minum);
+        //CardView minum = view.findViewById(R.id.minum);
         EditText cari = view.findViewById(R.id.cari);
 
         makan.setOnClickListener(new View.OnClickListener() {
@@ -37,13 +37,6 @@ public class BerandaFragment extends Fragment {
             }
         });
 
-        minum.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getActivity(), Pencarian.class);
-                startActivity(i);
-            }
-        });
 
         cari.setOnClickListener(new View.OnClickListener() {
             @Override

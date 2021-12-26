@@ -100,4 +100,20 @@ public class Menu {
         this.content = content;
     }
 
+    @Override
+    public String toString() {
+        return "Menu{" +
+                "id=" + id +
+                ", postid=" + postid +
+                ", catid=" + catid +
+                ", normalprice=" + normalprice +
+                ", discountprice=" + discountprice +
+                ", title='" + title + '\'' +
+                ", time=" + time +
+                ", options='" + options + '\'' +
+                ", picture='" + picture + '\'' +
+                ", moreimages='" + moreimages + '\'' +
+                ", content='" + content + '\'' +
+                '}';
+    }
 }
