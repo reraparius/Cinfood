@@ -17,8 +17,8 @@
             android:layout_width="180dp"
             android:layout_height="180dp"
             android:layout_marginStart="8dp"
-            android:padding="5dp"
             android:layout_marginTop="10dp"
+            android:padding="5dp"
             android:src="@mipmap/ic_launcher" />
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -29,17 +29,18 @@
             android:id="@+id/namaMakanan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:layout_toRightOf="@+id/fMakanan"
             android:padding="10dp"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:layout_marginTop="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.023"
             tools:text="Nama Makanan" />
+
         <TextView
             android:id="@+id/harga"
             android:layout_width="match_parent"
@@ -74,6 +75,8 @@
             android:text="no Kategori"
              app:layout_constraintVertical_bias="0.0"
             android:visibility="gone"/>
+
+
 
     </RelativeLayout>
 
