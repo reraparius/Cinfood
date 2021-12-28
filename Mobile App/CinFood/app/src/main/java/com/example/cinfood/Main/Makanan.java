@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.cinfood.API.ApiClient;
@@ -28,6 +31,7 @@ public class Makanan extends AppCompatActivity {
     private RecyclerView.LayoutManager lmMenu;
     private ArrayList<MenuModel> listmenu;
     ApiInterface apiInterface;
+    Button btnBeli;
 
 
     @Override
@@ -38,6 +42,15 @@ public class Makanan extends AppCompatActivity {
         lmMenu = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         rvMenu.setLayoutManager(lmMenu);
         GetDataMenu();
+
+        btnBeli = findViewById(R.id.btnBeli);
+        btnBeli.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Makanan.this,editprofile.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

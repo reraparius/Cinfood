@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_margin="5dp"
+        android:background="@drawable/border"
         >
 
         <ImageView
@@ -20,10 +21,6 @@
             android:padding="5dp"
             android:layout_marginTop="10dp"
             android:src="@mipmap/ic_launcher" />
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.024" />
 
         <TextView
             android:id="@+id/namaMakanan"
@@ -35,11 +32,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginTop="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.023"
-            tools:text="Nama Makanan" />
+             tools:text="Nama Makanan" />
         <TextView
             android:id="@+id/harga"
             android:layout_width="match_parent"
@@ -51,13 +44,7 @@
             android:layout_toRightOf="@+id/fMakanan"
             android:padding="10dp"
             android:textColor="#3f403f"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/fMakanan"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.05"
-            tools:text="Rp.10.000" />
+             tools:text="Rp.10.000" />
 
         <TextView
             android:id="@+id/TV_id"
@@ -74,6 +61,18 @@
             android:text="no Kategori"
              app:layout_constraintVertical_bias="0.0"
             android:visibility="gone"/>
+        <Button
+            android:id="@+id/btnBeli"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Beli"
+            android:layout_toRightOf="@+id/fMakanan"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="95dp"
+            android:layout_below="@+id/harga"
+            android:background="@drawable/button"
+            android:backgroundTint="@color/orange"
+            />
 
     </RelativeLayout>
 
