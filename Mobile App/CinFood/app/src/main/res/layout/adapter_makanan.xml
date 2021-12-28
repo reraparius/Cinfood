@@ -32,17 +32,8 @@
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
-<<<<<<< HEAD
-            android:layout_marginTop="20dp"
              tools:text="Nama Makanan" />
-=======
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.023"
-            tools:text="Nama Makanan" />
 
->>>>>>> 817fec222aab0ca0bccba4b7f8f5443d94341055
         <TextView
             android:id="@+id/harga"
             android:layout_width="match_parent"
@@ -71,6 +62,7 @@
             android:text="no Kategori"
              app:layout_constraintVertical_bias="0.0"
             android:visibility="gone"/>
+        
         <Button
             android:id="@+id/btnBeli"
             android:layout_width="100dp"
