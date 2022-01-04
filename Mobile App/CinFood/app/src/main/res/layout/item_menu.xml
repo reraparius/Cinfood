@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_width="150dp"
+            android:layout_height="175dp"
+            android:src="@color/purple_200"/>
+
+        <TextView
+            android:id="@+id/namaMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="Nama Menu"
+            android:layout_toRightOf="@id/foto"/>
+
+
+        <TextView
+            android:id="@+id/harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp. 10.000"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/foto"
+            android:layout_below="@id/namaMenu"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/diskon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diskon 5% (Rp. 9.000)"
+            android:textSize="10dp"
+            android:textColor="#045A12"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/foto"
+            android:layout_below="@id/harga"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/desk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi menu"
+            android:layout_toRightOf="@id/foto"
+            android:layout_below="@id/diskon"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="2"/>
+
+</RelativeLayout>
